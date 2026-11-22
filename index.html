@@ -1,144 +1,38 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>컴피리아 홈페이지</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-sub: #94a3b8;
-            --accent: #38bdf8;
-            --accent-hover: #0ea5e9;
-        }
-        body {
-            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5rem;
-            color: var(--text-main);
-        }
-        header p {
-            color: var(--text-sub);
-            margin: 0;
-            font-size: 1.1rem;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            width: 100%;
-            max-width: 1100px;
-        }
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-        .card h2 {
-            margin-top: 0;
-            font-size: 1.5rem;
-            border-bottom: 2px solid #334155;
-            padding-bottom: 12px;
-            color: var(--accent);
-        }
-        .card p {
-            color: var(--text-sub);
-            font-size: 0.95rem;
-            line-height: 1.5;
-            flex-grow: 1;
-        }
-        .link-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .btn {
-            display: block;
-            text-align: center;
-            padding: 10px 16px;
-            background-color: #334155;
-            color: var(--text-main);
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-        .btn:hover {
-            background-color: var(--accent-hover);
-            color: #fff;
-        }
-        footer {
-            margin-top: 50px;
-            color: var(--text-sub);
-            font-size: 0.85rem;
-        }
-    </style>
-</head>
-<body>
+<header>
+    <h1>ComfyUI 메모장</h1>
+    <p>AI 생성 도구 및 리소스 모음</p>
+</header>
 
-    <header>
-        <h1>ComfyUI 메모장</h1>
-        <p>AI 생성 도구 및 리소스 모음</p>
-    </header>
-
-    <div class="container">
-        <!-- 1. Image 카테고리 -->
-        <div class="card">
-            <h2>🎨 Image</h2>
-            <p>이미지 생성, 업스케일링, 인페인팅 및 비주얼 에디팅 관련 도구와 워크플로우를 모아두는 공간입니다.</p>
-            <div class="link-list">
-                <span class="btn" style="background: transparent; color: var(--text-sub); cursor: default;">업데이트 예정</span>
-            </div>
-        </div>
-
-        <!-- 2. Video 카테고리 -->
-        <div class="card">
-            <h2>🎬 Video</h2>
-            <p>AI 비디오 생성, 모션 인터폴레이션, 프레임 보간 및 애니메이션 제작 관련 리소스 공간입니다.</p>
-            <div class="link-list">
-                <span class="btn" style="background: transparent; color: var(--text-sub); cursor: default;">업데이트 예정</span>
-            </div>
-        </div>
-
-        <!-- 3. 3D Mesh 카테고리 -->
-        <div class="card">
-            <h2>🧊 3D Mesh</h2>
-            <p>이미지 기반 3D 모델 생성 및 지오메트리 정교화(Geometry Refinement) 관련 ComfyUI 노드입니다.</p>
-            <div class="link-list">
-                <a href="https://github.com/Aero-Ex/ComfyUI-Hi3D" class="btn" target="_blank">Aero-Ex / ComfyUI-Hi3D</a>
-                <a href="https://github.com/T8mars/Comfyui-Hi3d-T8" class="btn" target="_blank">T8mars / Comfyui-Hi3d-T8</a>
-            </div>
+<div class="container">
+    <!-- 1. Image 카테고리 -->
+    <div class="card">
+        <h2>🎨 Image</h2>
+        <p>이미지 생성, 업스케일링, 인페인팅 및 비주얼 에디팅 관련 도구와 워크플로우를 모아두는 공간입니다.</p>
+        <div class="link-list">
+            <span class="btn" style="background: transparent; color: var(--text-sub); cursor: default;">업데이트 예정</span>
         </div>
     </div>
 
-    <footer>
-        &copy; Comfyria Memo. All rights reserved.
-    </footer>
+    <!-- 2. Video 카테고리 -->
+    <div class="card">
+        <h2>🎬 Video</h2>
+        <p>AI 비디오 생성, 모션 인터폴레이션, 프레임 보간 및 애니메이션 제작 관련 리소스 공간입니다.</p>
+        <div class="link-list">
+            <span class="btn" style="background: transparent; color: var(--text-sub); cursor: default;">업데이트 예정</span>
+        </div>
+    </div>
 
-</body>
-</html>
+    <!-- 3. 3D Mesh 카테고리 -->
+    <div class="card">
+        <h2>🧊 3D Mesh</h2>
+        <p>이미지 기반 3D 모델 생성 및 지오메트리 정교화(Geometry Refinement) 관련 ComfyUI 노드입니다.</p>
+        <div class="link-list">
+            <a href="https://github.com/Aero-Ex/ComfyUI-Hi3D" class="btn" target="_blank">Aero-Ex / ComfyUI-Hi3D</a>
+            <a href="https://github.com/T8mars/Comfyui-Hi3d-T8" class="btn" target="_blank">T8mars / Comfyui-Hi3d-T8</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; Comfyria Memo. All rights reserved.
+</footer>
